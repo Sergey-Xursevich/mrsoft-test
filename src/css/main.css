@@ -21,7 +21,7 @@ body {
 }
 
 .filter__form input,
-.filter__form textarea {
+.filter__form textarea, .textarea {
     display: block;
     width: 100%;
     padding: 5px 20px;
@@ -34,20 +34,29 @@ body {
     font-size: 16px;
 }
 
+.textarea {
+  height: 250px;
+  overflow-y: scroll;
+}
+
 .filter__form input,
 .filter__form textarea:focus {
     outline: none;
 }
 
-.filter__form .btn {
+.filter__form button {
     margin-top: 20px;
     width: 100%;
     background: #fd773d;
     padding: 15px;
-    border-radius: 5px; 
+    border-radius: 5px;
     border: none;
     color: white;
     font-size: 18px;
+}
+
+.filter__form .btn__disable {
+  opacity: 0.2;
 }
 
 .filter__form textarea {

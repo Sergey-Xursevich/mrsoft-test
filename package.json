@@ -1,11 +1,12 @@
 {
-  "name": "webpacktemplate",
+  "name": "mrsoft-test",
   "version": "1.0.0",
-  "description": "My template",
+  "description": "mrsoft",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --open --mode development",
-    "build": "webpack --mode production"
+    "dev-server": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development"
   },
   "browserslist": [
     "> 1%",
@@ -21,6 +22,11 @@
     "css-loader": "^2.1.1",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.10",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
     "mini-css-extract-plugin": "^0.6.0",
     "node-sass": "^4.12.0",
     "path": "^0.12.7",

@@ -9,23 +9,23 @@
     <link rel="shortcut icon" href="/src/img/test.png" type="image/x-icon">
     <title>Тестовое задание</title>
 </head>
-
 <body>
-    <form class="filter">
+    <div class="filter">
         <div class="filter__form">
             <h2>Фильтр слов</h2>
-            <input type="text" placeholder="Введите слово для запроса">
-            <textarea placeholder="Результат..." rows="5" disabled></textarea>
+            <input type="text" placeholder="Введите слово для запроса" id="inputText">
+            <div class="textarea">
+            </div>
             <div class="filter__checkbox">
                 <label for="checkbox">Учитывать регистр букв</label>
                 <input type="checkbox" name="checkbox" id="checkbox">
             </div>
             <div class="filter__button">
-                <button class="btn">Фильтровать по длине слов</button>
-                <button class="btn">Фильтровать по подстроке</button>
+                <button class="btn btn__disable" id="btn-search-length" disabled>Фильтровать по длине слов</button>
+                <button class="btn btn__disable" id="btn-search-substring" disabled>Фильтровать по подстроке</button>
             </div>
         </div>
     </form>
-    <script src="/dist/app.js"></script>
+    <script src="dist/app.js"></script>
 </body>
 </html>
