@@ -13,6 +13,7 @@
         "sourceType": "module"
     },
     "rules": {
-        "func-names": ["error", "never"]
+        "func-names": ["error", "never"],
+        "no-restricted-globals": ["off", "event"]
     }
 }
