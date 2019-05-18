@@ -52,7 +52,7 @@ export default class App {
       if (!App.isNumeric(value)) {
         if (!checkbox.checked) {
           arr.forEach((element) => {
-            if (element.toLowerCase().indexOf(value) !== -1) {
+            if (element.toLowerCase().indexOf(value.toLowerCase()) !== -1) {
               textarea.innerHTML += `<p>${element}</p>`;
             }
           });
